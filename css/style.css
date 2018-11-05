@@ -1,0 +1,312 @@
+html, body, header {
+    height: 100%;
+    margin: 0;
+}
+
+header
+{
+    position: relative;
+    overflow: hidden;
+    background-image:url('../img/splash.jpg');
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-position: center;
+}
+
+header div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align:center;
+    width: 360px;
+}
+
+ header:before {
+     content:'';
+     position: absolute;
+     top:0;
+     left:0;
+     width:100%;
+     height: 100%;
+     background:rgba(0,0,0,0.15)
+ }
+
+a.bouton {
+    /* pour pouvoir mettre des marges et padding sur un a */
+    display: inline-block;
+    font-family: 'saira condensed';
+    font-size: 20px;
+    text-decoration: none;
+    color:#fff;
+    text-transform: uppercase;
+    width:165px;
+    border: 2px solid #fff;
+    margin: 50px;
+    padding: 10px 20px;
+    transition: all ease-in-out;
+}
+
+.bouton:hover {
+    padding: 10px 20px;
+    width:180px;
+    border-radius: 5px;
+    background-color:rgba(0,0,0,0.25);
+}
+
+/* Menu */
+
+nav {
+width:100%;
+padding:25px 0;
+text-align: center;
+border-bottom: 2px solid #303030;
+}
+
+nav a {
+    font-family: 'oswald';
+    font-size: 15px;
+    text-decoration: none;
+    color:#303030;
+    text-transform: uppercase;
+    text-decoration: none;
+    display:inline-block;
+    vertical-align: middle;
+    margin:0 15px;
+    /* pour avoir un peu d'air lors du soulignement */
+    padding-bottom: 3px;
+    /* pour que le texte ne "saute pas" lors du soulignement */
+    border-bottom:dotted 2px transparent;
+}
+
+/* Sauf sur le a qui a la class logo-nav */
+nav a:not(.logo-nav):hover{
+    border-bottom:dotted 2px #303030 ;
+}
+
+section.products {
+width:940px;
+margin:0 auto;
+text-align: center;
+}
+
+
+h2 {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    font-size: 20px;
+    color:#303030;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 20px;
+}
+
+h2 span {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: 14px;
+    display:block;
+    margin: 10px 0;
+    text-transform: none;
+    font-weight: bold;
+}
+
+section div.product{
+    width:300px;
+    height: 300px;
+    display:inline-block;
+    position: relative;
+    text-align: center;
+}
+
+a img {
+    width:100%;
+    padding:5px;
+}
+
+a {
+    text-decoration: none;
+    color:#303030;
+}
+
+h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-size:22px;
+    margin-bottom:0;
+}
+
+a span {
+    font-family: 'Cormorant Garamond', serif;
+    font-size:14px;
+    display:inline-block;
+}
+
+div.shop {
+    width:100%;
+    padding:20px;
+    text-align: left;
+    margin-top: 50px;
+    height: 63px;
+    background-image: url(../img/bar-promo.jpg);
+}
+.shop a {
+    float: right;
+}
+
+section.ourstory {
+    width:940px;
+    margin:0 auto;
+    text-align: center;
+    }
+
+.ourstory p {
+    font-family: "garamond-premier-pro",serif;
+    font-size: 21px;
+    line-height: 30px;
+    padding: 0px 150px;
+    margin-bottom: 50px;
+}
+
+.slider {
+    background-image: url(../img/image-04.jpg);
+    width:940px;
+    height: 565px;
+    margin:0 auto;
+    position:relative;
+    margin-bottom: 40px;
+}
+
+.slider-box {
+    width: 330px;
+    height: 180px;
+    background-color: #fff;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.slider-box::before {
+    content: '';
+    width: 320px;
+    height: 170px;
+    border:2px solid #303030;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    /* pour que le lien soit cliquable sur la box */
+    z-index:-1;
+}
+
+.slider h3 {
+    font-family: "garamond-premier-pro",serif;
+    font-size: 21px;
+    line-height: 24px;
+}
+
+.slider p {
+    font-family: "garamond-premier-pro",serif;
+    font-size: 21px;
+    font-style: italic;
+}
+
+.slider a {
+    font-family: "garamond-premier-pro",serif;
+    font-size: 21px;
+    line-height: 24px;
+}
+
+div.barre-contact {
+    background-image: url(../img/bar-footer.jpg);
+    width:940px;
+    height: 152px;
+    margin:0 auto;
+    display: block;
+    position: relative;
+    text-align:center;
+}
+
+.barre-contact > div {
+    float: left;
+    width: calc(100%/3);
+}
+/* pour régler le float */
+.barre-contact::after {
+content:'';
+display: block;
+clear: both;
+}
+
+footer h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    line-height: 2.5;
+}
+
+.barre-contact p {
+    font-family: "garamond-premier-pro",serif;
+    font-size: 16px;
+    color: #333;
+    margin: 5px;
+}
+
+.barre-contact a {
+    font-family: "garamond-premier-pro",serif;
+    font-size: 16px;
+    font-style: italic;
+    color: #333;
+    margin: 5px;
+}
+
+.connect a {
+    background-image: url(../img/icons-social.jpg);
+    height: 22px;
+    display: inline-block;
+}
+.facebook {
+    width: 12px;
+}
+
+.instagram {
+    width: 21px;
+    background-position:-12px;
+}
+
+.credits{
+    width:940px;
+    margin:0 auto;
+    display: block;
+    font-family: "garamond-premier-pro",serif;
+    font-size: 14px;
+    padding-top: 40px; 
+    padding-bottom: 40px;  
+}
+
+div.nav {
+    display: inline-block;
+    vertical-align: middle;
+    width: 400px;
+    text-align: left;
+}
+
+small {
+    display: inline-block;
+    vertical-align: middle;
+    width: 400px;
+    text-align: right;
+    font-family: "garamond-premier-pro",serif;
+    font-size: 14px;
+}
+
+.credits.nav a+a::before{
+    content:'•';
+    position: absolute;
+    bottom: -20px;
+}
+
+small, .credits img{
+    vertical-align: middle; 
+}
+
